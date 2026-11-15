@@ -1,0 +1,13 @@
+# 运行本系统所需的依赖（Python 3.10+，实测 3.13）
+# 安装：pip install -r requirements.txt
+
+fastapi>=0.110          # Web 框架
+uvicorn[standard]>=0.27 # ASGI 服务器
+SQLAlchemy>=2.0         # ORM（2.0 声明式写法）
+python-multipart>=0.0.9 # 文件上传
+pypdf>=4.0              # PDF 文本提取
+python-docx>=1.1        # Word 读取与单据生成
+openpyxl>=3.1           # Excel 读取与导出
+
+# 可选：装了中文分词更准，不装会自动降级为字符 n-gram 切分，功能不受影响
+# jieba>=0.42

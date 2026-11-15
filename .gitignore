@@ -1,0 +1,36 @@
+# 运行时数据
+data/app.db
+data/app.db-wal
+data/app.db-shm
+data/outputs/*
+data/uploads/*
+!data/outputs/.gitkeep
+!data/uploads/.gitkeep
+
+# 配置（含密钥）
+.env
+
+# 前端第三方库：默认纳入仓库，保证 clone 后离线可用；
+# 如需减小体积可取消下一行注释，改为运行 python scripts/fetch_vendor.py 获取
+# frontend/vendor/*.js
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# 开发期依赖缓存（离线安装的 wheel，不随项目分发）
+_libs/
+.workbuddy/pylibs/
+.workbuddy/tmp/
+
+# 编辑器
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# 知识库文档默认纳入仓库，保证 clone 后问答功能有内容可检索；
+# 学院真实文件请勿提交，放在 data/knowledge/ 下并在此排除
