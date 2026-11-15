@@ -1,0 +1,15 @@
+# 统一按 LF 存入仓库，检出时按平台转换，避免 Windows/macOS 混提交
+* text=auto eol=lf
+
+# 二进制文件不做换行转换与 diff
+*.docx binary
+*.xlsx binary
+*.xls binary
+*.pdf binary
+*.db binary
+*.png binary
+*.jpg binary
+*.ico binary
+
+# 第三方压缩文件按二进制处理，diff 无意义
+frontend/vendor/*.js linguist-vendored
